@@ -13,7 +13,8 @@ document.addEventListener("click", function (e) {
 document.addEventListener("click", function (i) {
     if (i.target.closest("#cartBtn") != i.target.closest("#cart")) return;
     cart.classList.remove("show-cart");
-    section2.classList.remove('down')
+    section2.classList.remove('down');
+    
 });
 
 hamburger.addEventListener("click", function () {
