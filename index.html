@@ -22,11 +22,11 @@
         <div class="container">
             <div class="px-4 flex items-center justify-between py-2 ">
                 <!-- logo -->
-                <h2 class="poppins-semibold text-2xl text-white xl:text-3xl">Company.</h2>
+                <h2 class="poppins-semibold text-2xl text-white lg:text-3xl xl:text-4xl">Company.</h2>
                 <!-- navbar -->
                 <nav id="navbar"
-                    class="lg:static poppins-regular absolute right-0 hidden top-[4.1rem] lg:w-auto bg-grey lg:flex items-center py-2 w-full md:w-[30%] lg:min-h-fit z-10 lg:bg-transparent shadow-md shadow-slate-600 md:rounded-bl-xl lg:shadow-none lg:rounded-none lg:mr-3">
-                    <ul class="flex lg:flex-row flex-col pl-6 text-primary lg:text-white items-center justify-center text-center ">
+                    class="lg:static poppins-regular absolute right-0 hidden top-[3rem] lg:w-auto bg-grey lg:flex items-center py-2 w-full md:w-[30%] lg:min-h-fit z-10 lg:bg-transparent shadow-md shadow-slate-600 md:rounded-bl-xl lg:shadow-none lg:rounded-none lg:mr-3">
+                    <ul class="flex lg:flex-row flex-col pl-6 text-primary lg:text-white items-center justify-center text-center">
                         <li class="lg:px-4 py-2 text-lg">
                             <a id="home" href="#" class="">Home</a>
                         </li>
@@ -59,16 +59,12 @@
                     </ul>
                 </nav>
                 <!-- hamburger menu -->
-                <div id="hamburger" class="hamburger lg:hidden flex items-center">
-                    <input class="checkbox" type="checkbox" />
-                    <svg fill="none" viewBox="0 0 50 50" height="30" width="30">
-                        <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="white"
-                            d="M6 11L44 11"></path>
-                        <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line">
-                        </path>
-                        <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43"
-                            class="lineBottom line"></path>
-                    </svg>
+                <div  class="lg:hidden flex items-center mr-6">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute">
+                        <span class="hamburger-line transition duration-300 ease-in-out  origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
                 </div>
             </div>
         </div>

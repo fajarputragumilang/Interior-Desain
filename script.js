@@ -15,13 +15,16 @@ const navbar = document.querySelector("#navbar");
 
 
 
+
 hamburger.addEventListener("click", function () {
     navbar.classList.toggle("hidden");
+    hamburger.classList.toggle('hamburger-active');
 });
 
 document.addEventListener('click', function(e) {
     if(e.target.closest('#hamburger') != e.target.closest('#navbar')) return 
-        navbar.classList.add('hidden')
+        navbar.classList.add('hidden');
+        hamburger.classList.remove('hamburger-active')
 })
 
 

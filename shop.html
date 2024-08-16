@@ -20,18 +20,15 @@
             </svg>
         </div>
     </div>
-
     <!-- navbar -->
     <section id="header" class="w-full bg-primary relative z-[99]">
-        
         <div class="container">
             <div class="px-4 flex items-center justify-between py-2 ">
                 <!-- logo -->
-                <h2 class="poppins-semibold text-2xl text-white xl:text-3xl">Company.</h2>
-
+                <h2 class="poppins-semibold text-2xl text-white lg:text-3xl xl:text-4xl">Company.</h2>
                 <!-- navbar -->
                 <nav id="navbar"
-                    class="lg:static poppins-regular absolute right-0 hidden top-[4.1rem] lg:w-auto bg-grey lg:flex items-center py-2 w-full md:w-[30%] lg:min-h-fit z-10 lg:bg-transparent shadow-md shadow-slate-600 md:rounded-bl-xl lg:shadow-none lg:rounded-none lg:mr-3">
+                    class="lg:static poppins-regular absolute right-0 hidden top-[3rem] lg:w-auto bg-grey lg:flex items-center py-2 w-full md:w-[30%] lg:min-h-fit z-10 lg:bg-transparent shadow-md shadow-slate-600 md:rounded-bl-xl lg:shadow-none lg:rounded-none lg:mr-3">
                     <ul class="flex lg:flex-row flex-col pl-6 text-primary lg:text-white  items-center justify-center text-center">
                         <li class="lg:px-4 py-2 text-lg">
                             <a href="index.html" class="">Home</a>
@@ -65,34 +62,28 @@
                     </ul>
                 </nav>
                 <!-- hamburger menu -->
-                    <div id="hamburger" class="hamburger lg:hidden flex items-center">
-                        <input class="checkbox" type="checkbox" />
-                        <svg fill="none" viewBox="0 0 50 50" height="30" width="30">
-                            <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="white"
-                                d="M6 11L44 11"></path>
-                            <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line">
-                            </path>
-                            <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43"
-                                class="lineBottom line"></path>
-                        </svg>
-                    </div>
+                <div class="lg:hidden flex items-center mr-6">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute">
+                        <span class="hamburger-line transition duration-300 ease-in-out  origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
     <!-- section Shop -->
-    <section  class="bg-grey pb-32 relative ">
-
+    <section  class="bg-grey pb-36 relative ">
         <div class="container ">
             <!-- start top -->
             <div class="pt-10 pb-4 border-b border-primary  mx-auto xl:w-[65%] ">
                 <h2 class="text-4xl lg:text-3xl poppins-bold text-center text-primary">Shop</h2> 
                 <a href="#row"><img src="img/arrow-down.svg" class="mx-auto pt-3 animate-bounce"></a>
             </div>
-            <!-- end top -->
             <!-- cart slide -->
             <div id="cart" class="bg-primary absolute right-0 top-[-50%] z-[1] w-full lg:w-1/2 lg:h-screen 2xl:w-1/4 lg:z-[10]">
                     <h3 class="poppins-semibold text-xl text-white ml-4 my-6 lg:text-2xl">My Cart</h3>
-                <div class="flex bg-grey items-center justify-evenly my-2 lg:mx-3 lg:rounded-lg">
+                <div class="flex bg-grey items-center justify-evenly my-2 mx-3 rounded-lg ">
                     <div class="w-max">
                         <img src="img/product-1.png" class="w-[4rem] lg:w-[5rem]">
                     </div>
@@ -111,7 +102,7 @@
                         <i data-feather="trash-2" class="text-primary w-[1rem] lg:w-full cursor-pointer"></i>
                     </div>
                 </div>
-                <div class="flex bg-grey items-center justify-evenly my-2 lg:mx-3 lg:rounded-lg">
+                <div class="flex bg-grey items-center justify-evenly my-2 mx-3 rounded-lg">
                     <div class="w-max">
                         <img src="img/product-2.png" class="w-[4rem] lg:w-[5rem]">
                     </div>
@@ -130,7 +121,7 @@
                         <i data-feather="trash-2" class="text-primary  w-[1rem] lg:w-full cursor-pointer"></i>
                     </div>
                 </div>
-                <div class="flex bg-grey items-center justify-evenly my-2 lg:mx-3 lg:rounded-lg">
+                <div class="flex bg-grey items-center justify-evenly my-2 mx-3 rounded-lg">
                     <div class="w-max">
                         <img src="img/product-3.png" class="w-[4rem] lg:w-[5rem]">
                     </div>
@@ -159,10 +150,10 @@
                 </div>
             </div>
             <!-- section items  -->
-            <div class=" py-6 px-2 ">
+            <div class=" py-6 px-2 mb-32">
                 <!-- item Interior-->
-                <div id="section2" class="lg:translate-y-0 md:flex md:flex-wrap lg:flex lg:flex-wrap 2xl:w-2/3 2xl:mx-auto xl:w-[80%] xl:mx-auto">
-                    <div class="mx-auto my-16 w-[250px] lg:w-[320px] lg:translate-x-[-100%] ">
+                <div id="section" class="lg:translate-y-0 md:flex md:flex-wrap lg:flex lg:flex-wrap 2xl:w-2/3 2xl:mx-auto xl:w-[80%] xl:mx-auto">
+                    <div class="mx-auto my-16 w-[250px] lg:w-[320px]  ">
                         <img src="img/product-1.png" alt="">
                         <h3 class="text-slate-800 text-center pt-6 poppins-regular">Nordic chair</h3>
                         <span class=" flex items-center justify-center font-semibold">$92.00</span>
@@ -281,16 +272,33 @@
                             <p class="text">Add to Cart</p>
                         </button>
                     </div>
+                    <div id="row" class="mx-auto my-16 w-[250px] lg:w-[320px] ">
+                        <img src="img/product-2.png" alt="">
+                        <h3 class="text-slate-800 text-center pt-6 poppins-regular">Nordic chair</h3>
+                        <span class=" flex items-center justify-center font-semibold">$92.00</span>
+                        <!-- card button -->
+                        <button class="CartBtn mx-auto mt-4 bg-secondary bg-opacity-85">
+                            <span class="IconContainer ">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"
+                                    fill="rgb(17, 17, 17)" class="cart">
+                                    <path
+                                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <p class="text">Add to Cart</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Footer Start -->
-    <section class="bg-white py-8 relative">
+    <section  class="bg-white py-12 relative">
         <div class="container">
             <div class="">
                 <!-- sofa absolute -->
-                <img src="img/sofa.png" alt="" class=" absolute -top-[8rem] right-2 w-[15rem] lg:w-[22rem] xl:w-[28rem] xl:right-12 xl:-top-[10rem]">
+                <img src="img/sofa.png" alt="" class=" absolute -top-[5rem] right-2 w-[15rem] lg:w-[22rem] xl:w-[28rem] xl:right-12 xl:-top-[10rem]">
                 <!-- form email -->
                 <div class=" mt-[10rem] xl:px-20">            
                     <form class="form xl:w-4/5 mx-auto">
