@@ -63,8 +63,6 @@ hideLoader();
 
 
 
-
-
 hamburger.addEventListener("click", function () {
     navbar.classList.toggle("hidden");
     hamburger.classList.toggle('hamburger-active');
