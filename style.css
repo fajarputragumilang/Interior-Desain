@@ -676,40 +676,12 @@ video {
   top: 30rem;
 }
 
-.top-\[4\.1rem\] {
-  top: 4.1rem;
-}
-
-.top-\[6rem\] {
-  top: 6rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-\[3\.1rem\] {
-  top: 3.1rem;
-}
-
 .top-\[3rem\] {
   top: 3rem;
 }
 
-.top-\[2\.5rem\] {
-  top: 2.5rem;
-}
-
-.top-\[3\.2rem\] {
-  top: 3.2rem;
-}
-
-.top-\[31rem\] {
-  top: 31rem;
-}
-
-.top-\[rem\] {
-  top: rem;
+.top-\[6rem\] {
+  top: 6rem;
 }
 
 .z-10 {
@@ -722,6 +694,10 @@ video {
 
 .z-\[2\] {
   z-index: 2;
+}
+
+.z-\[9999\] {
+  z-index: 9999;
 }
 
 .z-\[999\] {
@@ -787,6 +763,10 @@ video {
   margin-right: 1rem;
 }
 
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -819,14 +799,6 @@ video {
   margin-top: 10rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
 .block {
   display: block;
 }
@@ -853,6 +825,10 @@ video {
 
 .h-\[7rem\] {
   height: 7rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -972,6 +948,16 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {
@@ -1101,6 +1087,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-pink-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 72 153 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-85 {
@@ -1823,6 +1814,20 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* loading style */
+
+.loading {
+  --tw-translate-x: 100%;
+  --tw-translate-y: -100%;
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-bottom-left-radius: 9999px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}
+
 .hover\:bg-slate-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -2504,4 +2509,3 @@ a {
     line-height: 1.5rem;
   }
 }
-

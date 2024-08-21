@@ -12,6 +12,12 @@ const hamburger = document.querySelector("#hamburger");
 const navbar = document.querySelector("#navbar");
 
 
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById("loader").classList.add('loading')
+    }, 2000);
+}
+
 
 
 
