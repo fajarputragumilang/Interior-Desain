@@ -77,6 +77,7 @@ document.addEventListener('click', function (e) {
 
 
 
+
 window.onscroll = function () {
     const section = document.querySelector("#header");
     const fixedNav = section.offsetTop;
