@@ -684,6 +684,10 @@ video {
   top: 6rem;
 }
 
+.-top-32 {
+  top: -8rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -867,6 +871,10 @@ video {
   width: 2rem;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
 .w-\[12rem\] {
   width: 12rem;
 }
@@ -922,6 +930,22 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-\[5rem\] {
+  width: 5rem;
+}
+
+.w-\[2rem\] {
+  width: 2rem;
+}
+
+.w-\[rem\] {
+  width: rem;
+}
+
+.w-\[\] {
+  width: ;
 }
 
 .origin-bottom-left {
